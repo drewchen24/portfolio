@@ -1,14 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp");
 @import "../../node_modules/bootstrap/scss/functions";
-@import './utlis/variables';
+@import "./utlis/variables";
 @import "../../node_modules/bootstrap";
 
 // @import ".x/assets/scss/utlis/utilities";
 @import "/assets/scss/utlis/utilities";
 @import "./bootstrap/scss/utilities/_api";
 
+@import "./layout/header";
+@import "./layout/footer";
 
-@import './layout/header';
-@import './layout/footer';
-
-@import './pages/index.scss';
+@import "./pages/index.scss";
