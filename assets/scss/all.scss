@@ -3,6 +3,9 @@
 @import './utlis/variables';
 @import "../../node_modules/bootstrap";
 
+@import ".x/assets/scss/utlis/utilities";
+@import "./bootstrap/scss/utilities/_api";
+
 
 @import './layout/header';
 @import './layout/footer';
