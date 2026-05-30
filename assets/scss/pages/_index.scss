@@ -1,3 +1,16 @@
 .index-title {
-  font-size: 100px;
+  font-size: 104px;
+}
+
+.tag {
+  border: 1px solid $gray-500;
+  padding: 4px 8px;
+}
+
+.arrow {
+  background-image: url(/assets/images/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 68px;
+  height: 10px;
 }

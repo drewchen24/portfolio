@@ -7,6 +7,11 @@
 @import "/assets/scss/utlis/utilities";
 @import "./bootstrap/scss/utilities/_api";
 
+@import "./base/base";
+@import "./base/fonts";
+@import "./components/button";
+@import "./components/card";
+
 @import "./layout/header";
 @import "./layout/footer";
 
