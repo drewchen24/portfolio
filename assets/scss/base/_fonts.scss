@@ -1,0 +1,23 @@
+$font-heading: "Bargemo";
+
+$font-body-en: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$font-body-tc: "Noto Sans TC", "PingFang TC", sans-serif;
+
+h1,
+h2,
+h3,
+.display-title {
+  font-family: "Bargemo";
+}
+
+.en-font {
+  font-family: $font-body-en;
+  font-weight: 200;
+  letter-spacing: 0.05em;
+}
+
+.tc-font {
+  font-family: $font-body-tc;
+  font-weight: 300;
+}
