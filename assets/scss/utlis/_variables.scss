@@ -471,11 +471,12 @@ $body-emphasis-color: $black !default;
 // Style anchor elements.
 
 // $link-color: $primary !default;
-$link-color: $gray-900 !default;
+$link-color: $gray-800 !default;
 // $link-decoration: underline !default;
 $link-decoration: none !default;
 $link-shade-percentage: 20% !default;
-$link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
+// $link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-color: $blue !default;
 $link-hover-decoration: null !default;
 
 $stretched-link-pseudo-element: after !default;
@@ -558,7 +559,7 @@ $border-widths: (
   5: 5px,
 ) !default;
 $border-style: solid !default;
-$border-color: $gray-300 !default;
+$border-color: $gray-500 !default;
 $border-color-translucent: rgba($black, 0.175) !default;
 // scss-docs-end border-variables
 
@@ -624,15 +625,15 @@ $aspect-ratios: (
 // stylelint-disable value-keyword-case
 // $font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 // 載入字體
-@font-face {
-  font-family: "Bargemo";
-  src: url("/assets/fonts/Bargemo.otf") format("otf");
-  font-weight: 800;
-  font-style: bold;
-  font-display: swap;
-}
+// @font-face {
+//   font-family: "Bargemo";
+//   src: url("/assets/fonts/Bargemo.otf") format("otf");
+//   font-weight: 1000;
+//   font-style: bold;
+//   font-display: swap;
+// }
 $font-family-sans-serif:
-  "Bargemo",
+  "Roboto",
   system-ui,
   -apple-system,
   "Segoe UI",
@@ -865,8 +866,7 @@ $input-btn-border-width: var(--#{$prefix}border-width) !default;
 // For each of Bootstrap's buttons, define text, background, and border color.
 
 // scss-docs-start btn-variables
-// $btn-color: var(--#{$prefix}body-color) !default;
-$btn-color: none !default;
+$btn-color: var(--#{$prefix}body-color) !default;
 // $btn-padding-y: $input-btn-padding-y !default;
 $btn-padding-y: 0 !default;
 // $btn-padding-x: $input-btn-padding-x !default;
@@ -1312,10 +1312,11 @@ $navbar-light-hover-color: rgba(
   var(--#{$prefix}emphasis-color-rgb),
   0.8
 ) !default;
-$navbar-light-active-color: rgba(
-  var(--#{$prefix}emphasis-color-rgb),
-  1
-) !default;
+// $navbar-light-active-color: rgba(
+//   var(--#{$prefix}emphasis-color-rgb),
+//   1
+// ) !default;
+$navbar-light-active-color: $gray-800 !default;
 $navbar-light-disabled-color: rgba(
   var(--#{$prefix}emphasis-color-rgb),
   0.3

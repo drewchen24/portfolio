@@ -1,5 +1,28 @@
-// .header{
-//   // background: #69F0AE;
-//   font-size: 64px;
-// }
+.nav-link {
+  position: relative;
+  color: $gray-600;
 
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 6px;
+
+    width: 0;
+    height: 1.5px;
+
+    background: currentColor;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+  }
+
+  &:hover,
+  &.active {
+    color: $orange-400;
+  }
+
+  &:hover::after,
+  &.active::after {
+    width: 80%;
+  }
+}

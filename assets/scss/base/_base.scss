@@ -3,6 +3,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $gray-400, rgba(0, 0, 0, 0.5);
+  color: $gray-800;
 }
 
 body,
@@ -27,4 +28,5 @@ img {
 ul {
   margin: 0;
   // bootstrap 沒有清除 margin-bottom。這裡比照 meyerweb css reset 設定
+  // color: $gray-800;
 }
