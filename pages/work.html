@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Work</title>
+    <link rel="stylesheet" href="/assets/scss/all.scss" />
   </head>
   <body>
     <%- include('./layout/header'); -%>
@@ -15,18 +16,25 @@
           <div class="col-12">
             <!-- Title -->
             <h3 class="display-3 mb-8">Work</h3>
+          </div>
 
-            <!-- Info -->
-            <ul class="nav nav-pills mb-3 gap-4" id="pills-tab" role="tablist">
+          <!-- Info -->
+
+          <div class="col-12">
+            <ul
+              class="nav nav-pills mb-8 gap-4"
+              id="pills-tabContent"
+              role="tablist"
+            >
               <li class="nav-item" role="presentation">
                 <button
                   class="nav-link border rounded-0"
-                  id="pills-home-tab"
+                  id="pills-all-tab"
                   data-bs-toggle="pill"
-                  data-bs-target="#pills-home"
+                  data-bs-target="#pills-all"
                   type="button"
                   role="tab"
-                  aria-controls="pills-home"
+                  aria-controls="pills-all"
                   aria-selected="true"
                 >
                   All
@@ -37,10 +45,10 @@
                   class="nav-link border rounded-0"
                   id="pills-profile-tab"
                   data-bs-toggle="pill"
-                  data-bs-target="#pills-profile"
+                  data-bs-target="#pills-ui"
                   type="button"
                   role="tab"
-                  aria-controls="pills-profile"
+                  aria-controls="pills-ui"
                   aria-selected="false"
                 >
                   UI Design
@@ -49,12 +57,12 @@
               <li class="nav-item" role="presentation">
                 <button
                   class="nav-link border rounded-0"
-                  id="pills-contact-tab"
+                  id="pills-fronted-tab"
                   data-bs-toggle="pill"
-                  data-bs-target="#pills-contact"
+                  data-bs-target="#pills-fronted"
                   type="button"
                   role="tab"
-                  aria-controls="pills-contact"
+                  aria-controls="pills-fronted"
                   aria-selected="false"
                 >
                    Front-end Engineering
@@ -63,12 +71,12 @@
               <li class="nav-item" role="presentation">
                 <button
                   class="nav-link border rounded-0"
-                  id="pills-contact-tab"
+                  id="pills-graphic-tab"
                   data-bs-toggle="pill"
-                  data-bs-target="#pills-contact"
+                  data-bs-target="#pills-graphic"
                   type="button"
                   role="tab"
-                  aria-controls="pills-contact"
+                  aria-controls="pills-graphic"
                   aria-selected="false"
                 >
                    Graphic Design
@@ -77,54 +85,64 @@
               <li class="nav-item" role="presentation">
                 <button
                   class="nav-link border rounded-0"
-                  id="pills-contact-tab"
+                  id="pills-other-tab"
                   data-bs-toggle="pill"
-                  data-bs-target="#pills-contact"
+                  data-bs-target="#pills-other"
                   type="button"
                   role="tab"
-                  aria-controls="pills-contact"
-                  aria-selected="false"
+                  aria-controls="pills-other"
+                  aria-selected="true"
                 >
                    Other
                 </button>
               </li>
             </ul>
+
             <div class="tab-content" id="pills-tabContent">
               <div
                 class="tab-pane fade show active"
-                id="pills-home"
+                id="pills-all"
                 role="tabpanel"
-                aria-labelledby="pills-home-tab"
+                aria-labelledby="pills-all-tab"
                 tabindex="0"
               >
-                ...
+                all
               </div>
               <div
                 class="tab-pane fade"
-                id="pills-profile"
+                id="pills-ui"
                 role="tabpanel"
-                aria-labelledby="pills-profile-tab"
+                aria-labelledby="pills-ui-tab"
                 tabindex="0"
               >
-                ...
+                UI
               </div>
               <div
                 class="tab-pane fade"
-                id="pills-contact"
+                id="pills-fronted"
                 role="tabpanel"
-                aria-labelledby="pills-contact-tab"
+                aria-labelledby="pills-fronted-tab"
                 tabindex="0"
               >
-                ...
+                fronted
               </div>
               <div
                 class="tab-pane fade"
-                id="pills-disabled"
+                id="pills-graphic"
                 role="tabpanel"
-                aria-labelledby="pills-disabled-tab"
+                aria-labelledby="pills-graphic-tab"
                 tabindex="0"
               >
-                ...
+                graphic
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-other"
+                role="tabpanel"
+                aria-labelledby="pills-other-tab"
+                tabindex="0"
+              >
+                other
               </div>
             </div>
           </div>
@@ -134,6 +152,6 @@
 
     <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
