@@ -26,14 +26,20 @@
                 >
               </p>
               <div
-                class="en-font d-flex justify-content-start align-items-center fs-5"
+                class="en-font d-flex justify-content-start align-items-center fs-4"
               >
-                <img
-                  src="/assets/images/icon_email.svg"
-                  alt="email"
-                  style="width: 40px"
+                <svg
                   class="me-2"
-                />
+                  width="32px"
+                  height="28"
+                  viewBox="0 0 32 28"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M25.79,9.38c0-1.24-.96-2.24-2.13-2.24h-14.99c-1.18,0-2.14,1-2.14,2.24v9.67c0,1.27.96,2.27,2.18,2.27h14.91c1.22,0,2.18-.99,2.18-2.25v-9.69ZM24.5,9.39v9.3l-4.47-5.33,4.46-4.13s.01.1.01.16ZM16.18,15.13l-7.18-6.65h14.35l-7.17,6.65ZM13.29,14.25l2.43,2.25c.26.25.65.24.91,0l2.44-2.27,4.77,5.72c-.05.01-.11.02-.17.02h-14.99c-.06,0-.11,0-.15-.01l4.76-5.7ZM12.32,13.37l-4.48,5.36v-9.33c0-.06,0-.11.01-.17l4.46,4.14Z"
+                  />
+                </svg>
                 drewchen24@gmail.com
               </div>
             </div>
@@ -54,29 +60,49 @@
       <div class="container">
         <!-- scroll text -->
         <div class="d-flex mb-12">
-          <p class="fs-5 m-0 me-3">Scroll to see recently work</p>
-          <img
-            src="/assets/images/scroll-down.svg"
-            alt="scroll"
-            style="width: 20px"
-            class="mt-2"
-          />
+          <p class="fs-5 fw-light m-0 me-3 text-secondary">
+            Scroll to see recently work
+          </p>
+          <svg
+            class="align-self-center"
+            width="18"
+            height="14"
+            viewBox="0 0 18 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_35_274)">
+              <path
+                d="M5 5.06931L11.5 9L18 5L11.5962 12L5 5.06931Z"
+                fill="currentColor"
+              />
+            </g>
+            <path d="M0.5 1H11.5V10" stroke="currentColor" />
+            <defs>
+              <clipPath id="clip0_35_274">
+                <rect
+                  width="13"
+                  height="7"
+                  fill="white"
+                  transform="translate(5 5)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
         </div>
 
         <!-- content -->
         <div class="row">
           <div class="col-lg-6">
-            <div class="card border-0">
-              <img
-                src="/assets/images/portfolio/plantique-life.png"
-                alt="plantique-life"
-                class="mb-10"
-              />
-              <a
-                href="https://www.google.com"
-                class="mb-3 d-block"
-                target="_blank"
-              >
+            <a class="card border-0 mb-10" href="https://www.google.com">
+              <div class="card-img mb-10">
+                <img
+                  src="/assets/images/portfolio/plantique-life.png"
+                  alt="plantique-life"
+                  class=""
+                />
+              </div>
+              <div class="mb-3 d-block">
                 <div class="product-card">
                   <h4 class="product-card-title mb-2">植 感 生 活</h4>
                   <p class="mb-7">
@@ -84,17 +110,32 @@
                   </p>
                 </div>
                 <div class="d-flex justify-content-around">
-                  <div class="tag-group">
-                    <span class="tag me-3">Front-end Engineering</span>
-                    <span class="tag">2025</span>
+                  <div class="tag-group d-flex">
+                    <div class="tag me-3">Front-end Engineering</div>
+                    <div class="tag">2025</div>
                   </div>
-                  <button class="btn custom-btn ms-auto">
-                    <span class="arrow"></span>
-                    View Project
-                  </button>
+                  <div class="ms-auto d-flex">
+                    <svg
+                      class="arrow"
+                      viewBox="0 0 71 13"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path class="arrow-line" d="M0 6.5H68" />
+                      <path
+                        class="arrow-head"
+                        d="M64.0693 13L68 6.5L64 0L71 6.40376L64.0693 13Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <p
+                      class="card-text align-self-center display-title fw-bolder fs-5 m-0"
+                    >
+                      View Project
+                    </p>
+                  </div>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
           </div>
           <div class="col-lg-6"></div>
         </div>

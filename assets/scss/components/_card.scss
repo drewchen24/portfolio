@@ -1,11 +1,89 @@
+.card {
+  .card-img {
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      display: block;
+      transition: transform 0.6s ease;
+    }
+  }
+
+  &:hover {
+    .card-img img {
+      transform: scale(1.08);
+    }
+  }
+}
+
 .product-card {
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 300;
   font-size: 1rem;
-  color: $gray-800;
+  color: $gray-700;
 }
 
 .product-card-title {
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+// arrow
+.arrow {
+  width: 71px;
+  height: 13px;
+  align-self: center;
+  margin-right: 20px;
+}
+
+.arrow-line {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-dasharray: 68;
+  stroke-dashoffset: 16;
+  color: $gray-600;
+
+  transition: stroke-dashoffset 0.4s ease;
+}
+
+.arrow-head {
+  fill: currentColor;
+  opacity: 0;
+  transform: translateX(-1px);
+  transition:
+    opacity 0.35s ease 0.15s,
+    transform 0.35s ease 0.35s;
+  color: $orange-500;
+}
+
+.card {
+  // tag
+  .tag {
+    padding: 4px 8px;
+    color: $gray-600;
+    border: 1px solid $gray-600;
+    transition: all 0.3s ease;
+  }
+
+  .card-text {
+    transition: color 0.3s ease;
+  }
+
+  &:hover {
+    .card-text {
+      color: $orange-500;
+    }
+  }
+
+  &:hover {
+    .arrow-line {
+      stroke-dashoffset: 0;
+      color: $orange-500;
+    }
+    .arrow-head {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 }
