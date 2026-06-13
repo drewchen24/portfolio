@@ -33,9 +33,12 @@
   width: 71px;
   height: 13px;
   align-self: center;
-  margin-right: 20px;
 }
 
+.arrow-left {
+  width: 48px;
+  transform: scaleX(-1);
+}
 .arrow-line {
   fill: none;
   stroke: currentColor;

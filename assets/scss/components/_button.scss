@@ -1,5 +1,84 @@
-.custom-btn {
+.btn {
   display: flex;
-  align-items: center;
-  gap: 8px; /* 箭頭和文字間距 */
+  background-color: transparent;
+  color: $gray-800;
+}
+// arrow
+
+.arrow-left {
+  width: 20px;
+  height: 13px;
+  transform: scaleX(-1);
+  align-self: center;
+}
+
+.arrow-left-line {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 0.6;
+  stroke-dasharray: 120;
+  stroke-dashoffset: 16;
+
+  transition: stroke-dashoffset 0.6s ease;
+}
+
+.arrow-left-head {
+  fill: currentColor;
+  transform: translateX(-1px);
+  transition:
+    opacity 0.35s ease 0.15s,
+    transform 0.35s ease 0.35s;
+}
+// back
+.back-btn {
+  font-size: 16px;
+  font-weight: 800;
+  color: $gray-600;
+
+  &:hover {
+    color: $gray-400;
+  }
+}
+
+.back-btn {
+  &:hover {
+    .arrow-left-line {
+      stroke-dashoffset: -20;
+      color: $gray-500;
+    }
+    .arrow-left-head {
+      opacity: 1;
+      transform: translateX(0);
+      color: $gray-500;
+    }
+  }
+}
+
+.custom-btn {
+  font-family: $font-heading;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 0 2px;
+
+  display: flex;
+  align-items: baseline;
+  gap: 4px; /* 箭頭和文字間距 */
+  color: $gray-700;
+  background-color: transparent;
+
+  padding-bottom: 3px;
+  border: none;
+  border-bottom: 1px solid currentColor;
+
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 1;
+
+    color: $orange-500;
+  }
+}
+
+.custom-btn-outline {
+  border: 1px solid $gray-600;
 }
