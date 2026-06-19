@@ -28,38 +28,6 @@
   font-weight: 400;
 }
 
-// arrow
-.arrow {
-  width: 71px;
-  height: 13px;
-  align-self: center;
-}
-
-.arrow-left {
-  width: 48px;
-  transform: scaleX(-1);
-}
-.arrow-line {
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.5;
-  stroke-dasharray: 68;
-  stroke-dashoffset: 16;
-  color: $gray-600;
-
-  transition: stroke-dashoffset 0.4s ease;
-}
-
-.arrow-head {
-  fill: currentColor;
-  opacity: 0;
-  transform: translateX(-1px);
-  transition:
-    opacity 0.35s ease 0.15s,
-    transform 0.35s ease 0.35s;
-  color: $orange-500;
-}
-
 .card {
   // tag
   .tag {
@@ -71,6 +39,20 @@
 
   .card-text {
     transition: color 0.3s ease;
+  }
+
+  .arrow {
+    margin-right: 4px;
+  }
+  .arrow-line {
+    stroke-dasharray: 68;
+    stroke-dashoffset: 16;
+
+    transition: stroke-dashoffset 0.4s ease;
+  }
+
+  .arrow-head {
+    opacity: 0;
   }
 
   &:hover {
@@ -85,6 +67,8 @@
       color: $orange-500;
     }
     .arrow-head {
+      color: $orange-500;
+
       opacity: 1;
       transform: translateX(0);
     }

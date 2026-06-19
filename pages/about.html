@@ -1,14 +1,321 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="zh">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>about</title>
+    <link rel="stylesheet" href="/assets/scss/all.scss" />
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <h1>我是about</h1>
+
+    <main class="container">
+      <!-- introduce -->
+      <section class="py-13">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="d-flex flex-column justify-content-center h-100 px-4">
+              <!-- <h2 class="index-title mb-0">Hi !</h2> -->
+              <h3 class="display-3 mb-6">
+                I’m Drew / <span class="tc-font display-5">儀珊</span>
+              </h3>
+              <p class="tc-font fs-5 mb-6 content-text">
+                我是一名 UI / UX
+                與視覺設計師，擁有平面設計背景，專注於將品牌視覺轉化為具有邏輯與系統性的數位體驗;同時，因熱愛運動也擁有健身教練的身份。
+                <br />
+                喜歡藝術讓我從生活發覺事物不同的觀點並創造價值應用在工作中，我認為好的設計不只有美感的呈現，更是幫助使用者更順利地體驗生活。
+              </p>
+              <p
+                class="en-font fs-5 fw-normal font-monospace text-gray-700 mb-6 content-text"
+              >
+                ＃出色的設計始終來自關注正確的問題，而非表層的答案。
+              </p>
+
+              <!-- email -->
+              <div
+                class="display-title d-flex justify-content-start align-items-center fs-4"
+              >
+                <p
+                  class="card-text align-self-center display-title fw-bolder m-0 me-2"
+                >
+                  Contact
+                </p>
+                <svg
+                  class="arrow mt-2 me-2"
+                  viewBox="36 0 40 13"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path class="arrow-line" d="M0 6.5H68" />
+                  <path
+                    class="arrow-head"
+                    d="M64.0693 13L68 6.5L64 0L71 6.40376L64.0693 13Z"
+                    fill="currentColor"
+                  />
+                </svg>
+
+                <svg
+                  class="mt-2 me-2"
+                  width="32px"
+                  height="28"
+                  viewBox="0 0 32 28"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M25.79,9.38c0-1.24-.96-2.24-2.13-2.24h-14.99c-1.18,0-2.14,1-2.14,2.24v9.67c0,1.27.96,2.27,2.18,2.27h14.91c1.22,0,2.18-.99,2.18-2.25v-9.69ZM24.5,9.39v9.3l-4.47-5.33,4.46-4.13s.01.1.01.16ZM16.18,15.13l-7.18-6.65h14.35l-7.17,6.65ZM13.29,14.25l2.43,2.25c.26.25.65.24.91,0l2.44-2.27,4.77,5.72c-.05.01-.11.02-.17.02h-14.99c-.06,0-.11,0-.15-.01l4.76-5.7ZM12.32,13.37l-4.48,5.36v-9.33c0-.06,0-.11.01-.17l4.46,4.14Z"
+                  />
+                </svg>
+                drewchen24@gmail.com
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 d-flex justify-content-center">
+            <img
+              class="rounded-3 me-5"
+              src="../assets/images/Drew-02.png"
+              alt="Drew-01"
+              style="width: 500px"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- info -->
+      <section class="py-14 px-3">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="d-flex flex-column align-items-center mb-6">
+              <h2 class="fw-bold">What Can I do ?</h2>
+              <h3 class="tc-font text-secondary fs-5">我可以做什麼?</h3>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="d-flex flex-column align-items-center">
+              <ul class="list-unstyled row">
+                <li class="col-lg-6 px-3 text-end">
+                  <p class="en-font fs-4 m-0">
+                    - Product Design
+                    <span class="tc-font ms-4 fs-6">產品設計</span>
+                  </p>
+                </li>
+                <li class="col-lg-6 px-3 text-start">
+                  <p class="en-font fs-4 m-0">
+                    - Website Design
+                    <span class="tc-font ms-4 fs-6">網站設計</span>
+                  </p>
+                </li>
+                <li class="col-lg-6 px-3 text-end">
+                  <p class="en-font fs-4 m-0">
+                    - Print & Collateral
+                    <span class="tc-font ms-4 fs-6 me-2">印刷品</span>
+                  </p>
+                </li>
+                <li class="col-lg-6 px-3 text-start">
+                  <p class="en-font fs-4 m-0">
+                    - Branding & Identity
+                    <span class="tc-font ms-4 fs-6">品牌設計</span>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-14 px-3 border-top">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="d-flex flex-column align-items-center mb-6">
+              <h2 class="fw-bold">Skill</h2>
+              <h3 class="tc-font text-secondary fs-5">技能</h3>
+            </div>
+          </div>
+          <div class="col-lg-12 mb-6">
+            <ul class="list-unstyled d-flex justify-content-center">
+              <li class="px-3">
+                <div class="skill-circle fs-5">AI</div>
+              </li>
+              <li class="px-3">
+                <div class="skill-circle fs-5">PS</div>
+              </li>
+              <li class="px-3">
+                <div class="skill-circle fs-5">ID</div>
+              </li>
+              <li class="px-3">
+                <svg
+                  id="figma"
+                  data-name="figma"
+                  class="skill-circle p-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 18 18"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9.77,11.81v2.46c0,1.57-1.1,2.9-2.56,3.26-1.55.38-3.12-.37-3.82-1.76s-.35-3.13.89-4.14c-.8-.65-1.24-1.6-1.25-2.61s.44-1.98,1.25-2.64c-1.14-.93-1.54-2.45-1.03-3.82S4.99.37,6.43.37h5.32c1.4.01,2.61.98,3.06,2.24.49,1.36.07,2.84-1.05,3.77,1.4,1.15,1.65,3.18.6,4.62s-3.06,1.82-4.59.82ZM8.27,5.62V1.88s-1.92,0-1.92,0c-1.04,0-1.84.89-1.83,1.9s.83,1.84,1.86,1.84h1.88ZM11.6,5.63c1.07,0,1.91-.84,1.91-1.88s-.82-1.87-1.86-1.87h-1.88s0,3.75,0,3.75h1.83ZM8.27,7.13h-1.85c-1.06,0-1.9.85-1.89,1.89s.84,1.86,1.89,1.86h1.85s0-3.75,0-3.75ZM13.51,9c0-1.03-.84-1.87-1.87-1.87s-1.87.84-1.87,1.87.84,1.87,1.87,1.87,1.87-.84,1.87-1.87ZM8.27,12.37h-1.88c-1.06,0-1.88.88-1.86,1.91s.87,1.85,1.9,1.84,1.84-.84,1.84-1.88v-1.86Z"
+                  />
+                </svg>
+              </li>
+              <li class="px-3">
+                <div class="skill-circle p-5">
+                  <svg
+                    id="code"
+                    data-name="code"
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    viewBox="0 0 768 768"
+                  >
+                    <path
+                      d="M258.81,534.96c-9.94,3.41-18.51,1.58-25.59-4.77l-146.79-131.76c-7.35-6.59-7.35-22.27,0-28.86l147.6-132.45c9.76-8.75,24.25-7.04,31.98,1.64,9.03,10.13,6.71,24.16-3.31,33.12l-125.36,112.04,129.61,116.91c10.6,9.56,3,28.75-8.13,34.14Z"
+                    />
+                    <g>
+                      <path
+                        d="M338.43,593.61c-4.42,13.37-17.62,18.76-29.47,14.77-11.18-3.77-17.41-16.74-13.21-29.43l134.61-406.18c4-12.06,17.62-16.64,27.82-13.52,10.76,3.29,18.73,15.7,14.77,27.66l-134.53,406.71Z"
+                      />
+                      <path
+                        d="M534.44,530.49c-10.13,9.09-23.6,7.5-31.78-.58s-8.87-23.12.43-31.47l127.59-114.39-129.61-116.92c-10.88-9.82-2.67-29.53,8.67-34.32,9.36-3.07,17.94-1.38,25.04,4.99l146.08,130.99c8.22,7.37,8.19,23.06-.04,30.44l-146.39,131.26Z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </li>
+              <li class="px-3">
+                <div class="skill-circle p-5">
+                  <svg
+                    id="github"
+                    data-name="github"
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    viewBox="0 0 384 384"
+                    fill="currentColor"
+                  >
+                    <!-- Generator: Adobe Illustrator 30.1.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 136)  -->
+                    <path
+                      d="M148.71,309.61c-31.4,6.56-63.06.08-74.47-32.16-4.85-10.11-10.65-19.37-19.68-25.97-3.16-2.31-12.48-7.4-11.48-11.66.26-1.1,1.47-1.95,2.96-2.41,5.61-1.74,11.38-.73,16.94,1.32,10.97,4.05,18.76,12.41,24.84,22.21,6.9,11.12,17.56,18.77,30.55,20.52,10.77,1.19,21.14-.93,30.95-5.45,1.18-11.13,5.63-20.51,13.73-28.66-65.05-7.32-96.95-36.52-98.9-102.65-.66-22.37,6.77-43.65,22.39-60.2-7.09-18.23-5.3-38.86,2.01-56.83,7.94-1.21,15.13.66,22.59,2.93,13.17,4.52,24.97,11.05,37.02,19.15,35.73-9.5,72.93-9.62,108.85,0,12.38-8.25,24.73-15.13,38.57-19.59,6.96-1.95,13.52-3.55,20.85-2.46,7.42,18.25,8.85,38.14,2.44,56.72,15.36,16.31,22.76,37.38,22.19,59.56-.37,14.6-1.78,28.39-6.52,42.06-14.26,42.49-50.51,56.35-92.43,61,9.96,9.56,14.32,24.39,14.27,38l-.23,59.93c-.02,5.76,3.64,8.12,8.87,9.9l-125.72,1.27c5.96-1.45,9.85-4.52,9.78-10.4l-.37-36.14Z"
+                      fill="curr"
+                    />
+                  </svg>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- <div class="col-lg-12">
+            <ul class="list-unstyled d-flex justify-content-center">
+              <li class="px-3">
+                <div class="skill-circle">
+                  <svg
+                    class="p-5"
+                    id="html"
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    viewBox="0 0 347.77 347.77"
+                  >
+                    <defs>
+                      <style>
+                        .st0 {
+                          fill: transparent;
+                        }
+
+                        .st1 {
+                          fill: currentColor;
+                        }
+                      </style>
+                    </defs>
+                    <path
+                      class="st0"
+                      d="M176.26,347.77h-5.92c-.47-.77-1.18-.87-2.38-1.25l-116.08-36.86c-4.08-1.29-7.12-4.78-7.46-9.18L21.89,12.33c-.5-6.44,4.31-11.65,10.78-11.65h281.77c6.46,0,11.28,5.21,10.77,11.65l-22.53,288.13c-.35,4.51-3.39,7.83-7.47,9.14l-118.95,38.17ZM92.01,258.99l81.57,25.8,81.64-25.9,9-116.44-139.15-.03-4.41-40.84h146.83s2.78-37.41,2.78-37.41l-193.5.02,9.03,116.14,136.74-.03-3.41,47.57-44.62,12.02-44.41-12.03-.12-29.81-42.79.1,4.84,60.82Z"
+                    />
+                    <polygon
+                      class="st1"
+                      points="92.01 258.99 87.17 198.17 129.95 198.07 130.07 227.88 174.49 239.91 219.11 227.88 222.52 180.31 85.79 180.34 76.76 64.2 270.26 64.18 267.48 101.58 120.65 101.59 125.06 142.43 264.22 142.46 255.22 258.9 173.58 284.8 92.01 258.99"
+                    />
+                  </svg>
+                </div>
+              </li>
+              <li class="px-3">
+                <div class="skill-circle">
+                  <svg
+                    class="p-5"
+                    id="css"
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    viewBox="0 0 384 384"
+                  >
+                    <defs>
+                      <style>
+                        .st0 {
+                          fill: currentColor;
+                        }
+                        .st1 {
+                          fill: transparent;
+                        }
+                      </style>
+                    </defs>
+                    <polygon
+                      class="st1"
+                      points="24 0 54.58 345.46 190.5 384 0 384 0 0 24 0"
+                    />
+                    <path
+                      class="st0"
+                      d="M360,0l-30.64,345.54-135.86,38.46h-3l-135.92-38.54L24,0h336ZM191.75,266.56l-47.1-12.79-3.24-35.25-42.57.07,6.16,68.04,87.03,24.03,87.04-24.06,19.22-215.9-212.64-.08,2.78,40.12,164.1-.52-3.24,43.08-156.61,1.86,4.09,40.18,149-.36-6.48,58.85-47.55,12.71Z"
+                    />
+                  </svg>
+                </div>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+      </section>
+
+      <!-- contact -->
+
+      <section class="py-14 px-3">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
+          <h2 class="display-4">Contact</h2>
+          <h3 class="tc-font text-secondary fs-5 mb-8">聯繫我</h3>
+
+          <div class="mb-6">
+            <svg
+              width="120"
+              height="60"
+              viewBox="0 0 40 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M36 4.32407V4.68406C34.9867 10.5107 33.1333 22.1374 32.2667 27.4841C32.08 28.8707 31.7733 28.5507 31.52 28.4441L22.8533 24.8974L18.0267 31.3907C17.8933 31.5641 17.72 31.6441 17.5333 31.6307C17.3733 31.6307 17.2 31.4974 17.12 31.2974L12.6133 20.6707L4.32 17.2574C4.10667 17.1641 4 16.9641 4 16.7774C4 16.6307 4.10667 16.4174 4.29333 16.3374L35.1733 4.07073C35.5467 3.92406 35.8 4.00407 35.9867 4.32407H36ZM19.16 15.5507L26.16 10.7774L33.32 5.8974L5.84 16.7907L12.9467 19.7241L19.16 15.5374V15.5507ZM31.2933 27.2841L33.1733 15.6574L34.6133 6.68406L19.9067 22.5907L31.2933 27.2841ZM17.3733 29.3107L18.5733 22.5641L31.7333 8.28407L21.0533 15.4707L13.6267 20.4841L17.3867 29.3107H17.3733ZM21.8933 24.5107L19.4267 23.4974L18.4533 29.1374L21.8933 24.5107Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <div class="justify-content-center align-items-center me-8">
+            <div class="d-flex">
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=drewchen24@gmail.com "
+                target="_blank"
+                class="text-decoration-none"
+              >
+                <h5 class="display-title fs-4 m-0 me-10">Send an Email</h5>
+              </a>
+
+              <span class="display-title fs-5">/</span>
+
+              <a
+                href="https://line.me/ti/p/P3a2rJBGGj"
+                target="_blank"
+                class="text-decoration-none"
+              >
+                <h5 class="display-title fs-4 m-0 ms-10">Line</h5>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
