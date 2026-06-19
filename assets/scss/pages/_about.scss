@@ -1,0 +1,11 @@
+.skill-circle {
+  width: 64px;
+  height: 64px;
+
+  border: 1px solid $gray-700;
+  border-radius: 50%;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -4,6 +4,27 @@
   color: $gray-800;
 }
 // arrow
+.arrow {
+  width: 40px;
+  height: 13px;
+  align-self: center;
+}
+
+.arrow-line {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  color: $gray-500;
+}
+.arrow-head {
+  fill: currentColor;
+  opacity: 1;
+  transform: translateX(-1px);
+  transition:
+    opacity 0.35s ease 0.15s,
+    transform 0.35s ease 0.35s;
+  color: $gray-500;
+}
 
 .arrow-left {
   width: 20px;
