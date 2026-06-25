@@ -31,12 +31,16 @@
           <a class="nav-link nav-link-line" href="#">BEHANCE</a>
         </li>
       </ul>
-      <a href="#navbar" class="back-to-top fs-6" id="top">
+      <button
+        id="custom-btn-backtotop"
+        class="btn custom-btn-backtotop"
+        type="button"
+      >
         <svg
           width="32"
           height="32"
           viewBox="0 0 32 32"
-          fill="none"
+          fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -45,7 +49,34 @@
           />
         </svg>
         TOP
-      </a>
+      </button>
     </div>
   </div>
 </nav>
+
+<script type="module">
+  const backToTopBtn = document.getElementById("custom-btn-backtotop");
+  window.onscroll = function () {
+    scrollFunction();
+  };
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      backToTopBtn.style.visibility = "visible";
+      backToTopBtn.style.opacity = "1";
+    } else {
+      backToTopBtn.style.visibility = "hidden";
+      backToTopBtn.style.opacity = "0";
+    }
+  }
+  backToTopBtn.addEventListener("click", backToTop);
+
+  function backToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+</script>

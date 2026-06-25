@@ -5,7 +5,7 @@
 }
 // arrow
 .arrow {
-  width: 40px;
+  width: 86px;
   height: 13px;
   align-self: center;
 }
@@ -13,13 +13,14 @@
 .arrow-line {
   fill: none;
   stroke: currentColor;
-  stroke-width: 1.5;
+  stroke-width: 1;
   color: $gray-500;
 }
 .arrow-head {
   fill: currentColor;
   opacity: 1;
   transform: translateX(-1px);
+
   transition:
     opacity 0.35s ease 0.15s,
     transform 0.35s ease 0.35s;

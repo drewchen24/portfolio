@@ -26,3 +26,16 @@
     width: 80%;
   }
 }
+
+.navbar {
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+  background-color: transparent;
+}
+
+.navbar.scrolled {
+  background: linear-gradient(rgba(255, 255, 255, 0.298) 40%);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(12px);
+}
